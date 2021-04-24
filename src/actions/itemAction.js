@@ -6,7 +6,7 @@ export const listItems = () => async(dispatch) => {
         type: ITEMS_LIST_REQUEST
     });
     try {
-        const { data } = await Axios.get("/fridge");
+        const { data } = await Axios.get("https://thefridge-api.karapincha.io/fridge");
         dispatch({type: ITEMS_LIST_SUCCESS, payload: data});
         localStorage.setItem('Items',JSON.stringify(data));
     } catch (error) {
