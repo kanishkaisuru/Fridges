@@ -38,7 +38,6 @@ export default function Main() {
                 <span style={{ fontSize: "15px" }}>
                   <i
                     class="em em-alarm_clock"
-                    aria-role="presentation"
                     aria-label="ALARM CLOCK"
                     style={{ fontSize: "12px" }}
                   ></i>

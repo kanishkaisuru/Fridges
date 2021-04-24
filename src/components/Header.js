@@ -24,8 +24,10 @@ export default function Header() {
       </div>
       <div class="sub-title">
         <h5>
-          <span style={{ fontSize: "15px" }}><i class={icon} aria-role="presentation" aria-label=""></i></span> It's better to go
-          shopping before this friday
+          <span style={{ fontSize: "15px" }}>
+            <i class={icon} aria-label=""></i>
+          </span>{" "}
+          It's better to go shopping before this friday
         </h5>
       </div>
     </header>
