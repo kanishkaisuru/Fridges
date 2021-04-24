@@ -25,10 +25,8 @@ export default function Footer() {
           <div className="totolItems">
             <p>Total Items -- {items.length}</p>
           </div>
-          {items.map((item) => (
-            <li  key={item._id} style={{listStyle:'none'}}>
-              <Item item={item}></Item>
-            </li>
+          {itemList.map((item) => (
+            <Item key={item._id} item={item}></Item>
           ))}
         </>
       )}
