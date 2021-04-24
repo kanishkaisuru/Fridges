@@ -22,7 +22,7 @@ export const addItem = (title, expiry) => async(dispatch) => {
 export const removeItem = (itemId) => async(dispatch) => {
     dispatch({type: REMOVE_ITEM_REQUEST, payload: {itemId}});
     try {
-        const {data} = await axios.delete(`https://thefridge-api.karapincha.io//${itemId}`);
+        const {data} = await axios.delete(`https://thefridge-api.karapincha.io/${itemId}`);
         dispatch({type: REMOVE_ITEM_SUCCESS, payload: data});
     } catch (error) {
         dispatch({
