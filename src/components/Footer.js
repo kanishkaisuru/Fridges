@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="totolItems">
             <p>Total Items -- {items.length}</p>
           </div>
-          {items !== null ? (
+          {items !== null || items !== undefined ? (
             items.map((item) => <Item key={item._id} item={item}></Item>)
           ) : (
             <LoadingBox></LoadingBox>
