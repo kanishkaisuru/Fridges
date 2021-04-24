@@ -9,6 +9,7 @@ export default function Footer() {
   const dispatch = useDispatch();
   const itemList = useSelector((state) => state.itemList);
   const { loading, error, items } = itemList;
+  console.log(items);
 
   useEffect(() => {
     dispatch(listItems());
@@ -25,9 +26,11 @@ export default function Footer() {
           <div className="totolItems">
             <p>Total Items -- {items.length}</p>
           </div>
-          {itemList.map((item) => (
-            <Item key={item._id} item={item}></Item>
-          ))}
+          {items !== null ? (
+            items.map((item) => <Item key={item._id} item={item}></Item>)
+          ) : (
+            <LoadingBox></LoadingBox>
+          )}
         </>
       )}
     </footer>

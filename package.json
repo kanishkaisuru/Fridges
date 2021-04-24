@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy": "https://thefridge-api.karapincha.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
